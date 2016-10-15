@@ -17,5 +17,4 @@ Use npm package "liver-server" or any equivalent server to run the application.
 
 - jQuery
 
-
-https://cloud.githubusercontent.com/assets/21244627/19411064/aa421588-9313-11e6-9d05-742a96b2cb2b.png
+![alt tag](https://cloud.githubusercontent.com/assets/21244627/19411064/aa421588-9313-11e6-9d05-742a96b2cb2b.png)
