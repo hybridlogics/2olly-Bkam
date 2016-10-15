@@ -1,0 +1,258 @@
+<!doctype html>
+<html ng-app="CalApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Amr Emad">
+    <meta name="description" content="Save money now by comparing prices of international shopping service" />
+    <meta name="keywords" content="amazon,shop and ship,edfa3ly,lynks,2olly,shopping,online shopping in Egypt,customs,comparing" />
+
+
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/ngprogress.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <title>2olly Bkam</title>
+
+</head>
+
+<body ng-controller="calCtrl">
+    <!-- Fixed navbar -->
+
+    <div id="headerwrap">
+        <img src="img/2.png" alt="KeystoneJS" width="80" height="81">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+
+                    <h1>2olly Bkam</h1>
+                    <h5>Save money now by comparing prices of international shopping service</h5>
+                    <a href="http://amzn.to/25f0jej" target="_self"><img alt="Shop amazon" src="img/amazon.png" width="90px"></a>
+
+                    <h6>Just enter item info to get best price</h6>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+
+        <div class="row">
+            <div class="col-lg-2 col-md-offset-5">
+                <form class="form-inline" id="bkam">
+                    <div class="form-group">
+                        <h3>  <label for="form_ItemPrice">Item Price</label></h3>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="form_ItemPrice" placeholder="Item Price" ng-change="showVals=false" ng-model="priceItem">
+                            <div class="input-group-addon">$USD</div>
+
+                        </div>
+                    </div>
+            </div>
+            <p></p>
+
+            <div class="col-lg-2 col-md-offset-5">
+                <div class="form-inline">
+                    <h3>  <label for="number" pattern="[0-9]*">Item Weight</label></h3>
+                    <div class="input-group">
+                        <select class="form-control" name="form_ItemType" id="form_ItemType" ng-change="showVals=false" ng-model="weightItem" ng-options="w.weight for w in weightItems"></select>
+                        <div class="input-group-addon">Kg.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-offset-5">
+                <div class="form-group">
+                    <h3><label for="form_ItemType">Item Category</label><h3>
+                            <select class="form-control" name="form_ItemType" id="form_ItemType" ng-change="showVals=false" ng-model="valueItem" ng-options="x.type for x in dataItems"></select>
+                        </div>
+                    </form>
+                    <div class="col-lg-2 col-md-offset-5">
+                  <a href="#best"  role="button" ng-click="calculate(priceItem,weightItem.value,valueItem.type);showValues();" class="btn btn-lg btn-primary">Get Best Price</button></a>
+                </div>
+            </div>
+            <div class="home-header-brands-title">Comparison Now between:</div>
+            <div class="home-header-brands">
+                      <div class="home-header-brand"><img src="img/edfa3ly-logo-ar.png" width="137" height="40"></div>
+                      <div class="home-header-brand"><img src="img/lynks.png" width="80" height="81"></div>
+                      <div class="home-header-brand"><img src="img/SNS.png" width="100" height="81"></div>
+                      <div class="home-header-brand"><img src="img/fishisfast.png" width="80" height="81"></div>
+                      <div class="home-header-brand"><img src="img/hatolna.png" width="130" height="81"></div>
+
+                    </div>
+          </div>   <!-- /container -->
+      	<!-- /headerwrap -->
+        <!-- FORM FOR ITEM -->
+<div id="best"></div>
+
+
+<section ng-if="showVals && priceItem!=null && priceItem>0">
+            <!-- HEADER -->
+            <div class="row centered"><h1>Your Comparison Results</h1>
+            <div class="alert alert-info">
+                <h4>We have found best prices from <strong>{{companiesArray[0].name}}</strong> in <strong>{{companiesArray[0].final | currency:"EGP&nbsp;" }}</strong></h4>
+            </div>
+</div>
+
+
+
+            <!-- ITEMS LIST -->
+            <div class="container">
+
+            <div class="row">
+
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Logo</th>
+                                <th>Company</th>
+                                <th>Customs</th>
+                                <th>Tax</th>
+                                <th>Fees</th>
+                                <th>shipping</th>
+                                <th>Clearance</th>
+                                <th>Approvals</th>
+                                <th>Subscription</th>
+                                <th>Dollar</th>
+                                <th>Total Price</th>
+
+                            </tr>
+                        </thead>
+                        <tr ng-repeat="(key,compArr) in companiesArray">
+                            <td>
+                                <img width="50" height="50" ng-src="{{compArr.img}}">
+                            </td>
+                            <td>
+                                <h4>{{compArr.name}}</h4>
+                                <small>{{compArr.desc}}</small>
+                            </td>
+
+
+
+                            <!--   <td><button type="button" class="btn btn-danger">{{companiesArray[0].final | currency:"EGP&nbsp;" }}</button></td></td>-->
+                           <td>
+                                <span class="label label-primary"><strong>%{{compArr.custom | number:2}}</strong></span>
+                                <span class="label label-success"><strong>${{compArr.finalzcus | number:2}}</strong></span>
+
+
+                          </td>
+                            <td> <span class="label label-primary"><strong>%{{compArr.tax}}</strong></span>
+                                <span class="label label-success"><strong>${{compArr.finaltax | number:2}}</strong></span>
+                            </td>
+                            <td>
+                                <span class="label label-primary" ng-if="!feeCheck[key]"><strong>%{{compArr.fee}}</strong></span>
+                                <span class="label label-primary" ng-if="feeCheck[key]"><strong>{{compArr.fee | number:2}}</strong></span>
+                                <span class="label label-success"><strong>{{compArr.finalfee | number:2}}</strong></span>
+                            </td>
+                            <td> <span class="label label-primary"><strong>${{compArr.shipping}}</strong></span>
+                                <span class="label label-success"><strong>${{compArr.finalshpp | number:2}}</strong></span>
+
+                            </td>
+                            <td> <span class="label label-danger"><strong>${{compArr.clearsh}}</strong></span>
+                            </td>
+                            <td> <span class="label label-warning"><strong>{{compArr.customcheck}}</strong></span>
+                            </td>
+                            <td> <span class="label label-warning"><strong>EGP {{compArr.subsc}}</strong></span>
+                            </td>
+                            <td> <span class="label label-danger"><strong>EGP {{compArr.dollar}}</strong></span>
+                            </td>
+                            <td>
+                                <strong>{{compArr.final | currency: "&nbsp; EGP "}}</strong>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+  </div>
+  <!-- *****************************************************************************************************************
+	 SERVICE LOGOS
+	 ***************************************************************************************************************** -->
+	 <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+ 				<div class="col-md-4">
+ 					<i class="fa fa-heart-o"></i>
+ 					<h4>To be edit</h4>
+ 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+ 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<i class="fa fa-flask"></i>
+ 					<h4>To be edit</h4>
+ 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+ 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<i class="fa fa-trophy"></i>
+ 					<h4>To be edit</h4>
+ 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+ 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+ 				</div>
+	 		</div>
+	 	</div><! --/container -->
+    <br>
+
+
+</div>
+  <!-- *****************************************************************************************************************
+   OUR CLIENTS
+   ***************************************************************************************************************** -->
+
+
+    <div id="footerwrap">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-4">
+           <h4>About</h4>
+           <div class="hline-w"></div>
+           <p></p>
+         </div>
+         <div class="col-lg-4">
+           <h4>Social Links</h4>
+           <div class="hline-w"></div>
+           <p>
+
+
+           </p>
+         </div>
+         <div class="col-lg-4">
+           <h4>Our Bunker</h4>
+           <div class="hline-w"></div>
+           <p>
+             <br/>
+             <br/>
+             <br/>
+           </p>
+         </div>
+       </div>
+     </div>
+
+    </div>
+
+    <script src="assets/js/jquery-2.2.3.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-animate.min.js"></script>
+    <script src="assets/js/core.js"></script>
+    <script src="assets/js/ngprogress.min.js"></script>
+    <script>
+    $(document).ready(function(){
+$('a[href^="#"]').on('click',function (e) {
+  e.preventDefault();
+
+  var target = this.hash;
+  var $target = $(target);
+
+  $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+  }, 1300, 'swing', function () {
+      window.location.hash = target;
+  });
+});
+});
+    </script>
+
+</body>
+</html>

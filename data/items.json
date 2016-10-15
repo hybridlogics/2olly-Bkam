@@ -1,0 +1,64 @@
+{
+    "items": [
+        {
+            "type": "Computer / laptop"
+        },
+        {
+            "type": "Clothes / Bag / Case / Shoes"
+        },
+        {
+            "type": "Electronics"
+        },
+        {
+            "type": "Playstation / Xbox / Wii / Consoles"
+        },
+        {
+            "type": "Kitchen Tools and Accessories"
+        },
+        {
+            "type": "Makeup / Cosmetics"
+        },
+        {
+            "type": "Mobile / Tablet / Wireless device"
+        },
+        {
+            "type": "Mobile Accessory"
+        },
+        {
+            "type": "Supplement / Medical equipment / Gym"
+        },
+        {
+            "type": "Toys"
+        },
+        {
+            "type": "TV / LCD / Monitor"
+        },
+        {
+            "type": "Watch / Sunglasses / Eyeglasses"
+        },
+        {
+            "type": "Books"
+        },
+        {
+            "type": "Bluetooth device"
+        },
+        {
+            "type": "Car spare part / accessory"
+        },
+        {
+            "type": "Digital Camera"
+        },
+        {
+            "type": "Playstation Xbox Pc Games "
+        },
+        {
+            "type": "Type 18"
+        },
+        {
+            "type": "Type 19"
+        },
+        {
+            "type": "Type 20"
+        }
+    ]
+}

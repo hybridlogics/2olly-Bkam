@@ -1,0 +1,44 @@
+{
+    "weights": [
+        {
+            "value": 1,
+            "weight": "1 lbs / 0.5 kg"
+        },
+        {
+            "value": 2,
+            "weight": "2 lbs / 1 kg"
+        },
+        {
+            "value": 3,
+            "weight": "3 lbs / 1.5 kg"
+        },
+        {
+            "value": 4,
+            "weight": "4 lbs / 2 kg"
+        },
+        {
+            "value": 5,
+            "weight": "5 lbs / 2.5 kg"
+        },
+        {
+            "value": 6,
+            "weight": "6 lbs / 3 kg"
+        },
+        {
+            "value": 7,
+            "weight": "7 lbs / 3.5 kg"
+        },
+        {
+            "value": 8,
+            "weight": "8 lbs / 4 kg"
+        },
+        {
+            "value": 9,
+            "weight": "9 lbs / 4.5 kg"
+        },
+        {
+            "value": 10,
+            "weight": "10 lbs / 5 kg"
+        }
+    ]
+}
