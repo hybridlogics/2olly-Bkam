@@ -3,7 +3,7 @@
         "name": "Edfa3ly",
         "name2": "أدفعلي",
         "desc": "",
-        "img": "https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/1010190_626284674050725_1587039324_n.png?oh=75436ec24ac5e54c98a161e8139e5c22&oe=579DC01F",
+        "img": "https://www.edfa3ly.co/bundles/edfa3lylegacylayout/Frontend/Edfa3ly/images/landingpage001/001.png",
         "itemType": [{
             "type": "Computer / laptop",
             "shipping": 16,
@@ -213,7 +213,7 @@
         "name": "Lynks",
         "name2": "لينكس",
         "desc": " اشتراك سنوي 300 جنية مضاف الي اجمالي السعر",
-        "img": "https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/13177818_516879211828083_2165029561134233625_n.png?oh=fbff8028c865f5758c89f2d0d0f27dc3&oe=57D6029D",
+        "img": "http://u1.mgcdn.com/mimg/merimg/b_146121795325.png?v=141016",
         "itemType": [{
             "type": "Computer / laptop",
             "shipping": 15,
@@ -405,7 +405,7 @@
     }, {
         "name": "ShopAndShip",
         "desc": "",
-        "img": "https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/12507452_402762003266206_6944423692048659344_n.png?oh=d657704dd4f956752f4ca17bb19e70a0&oe=57AAD7EE",
+        "img": "https://hekmat.khoukaz.com/wp-content/uploads/2013/04/sns-150.png",
         "itemType": [{
             "type": "Computer / laptop",
             "shipping": [21, 39, 57, 75, 93, 111, 129, 147, 165, 183, 201, 219, 237, 255, 273, 291, 309, 327, 345, 263, 381, 399, 417, 435, 453, 471, 489, 507, 525, 543, 561, 579, 597, 615, 633, 651, 669, 687, 705, 723, 714, 759, 777, 795, 813, 831, 849, 867, 885, 903, 921, 939, 957, 975, 993, 1011, 1029, 1047, 1065, 1083, 1101, 1119, 1137, 1155, 1173, 1191, 1209, 1227, 1245, 1263, 1281, 1299, 1217, 1335, 1353, 1371, 1389, 1407, 1425, 1443, 1461, 1479, 1497, 1515, 1533, 1551, 1569, 1587, 1605, 1623, 1641, 1659, 1677, 1695, 1713, 1731, 1749, 1767, 1785, 1803],
@@ -598,7 +598,7 @@
         "name": "FishisFast",
         "desc": " اماكنية تجميع الشحنات وتصويرها مجاناً",
         "name2": "فيش ازفاست",
-        "img": "https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/10423823_751217394957590_9103994508296712574_n.png?oh=ef397274531824714d3e7346652a81ca&oe=579EA636",
+        "img": "https://www.fishisfast.com/fishisfast.png",
         "itemType": [{
             "type": "Computer / laptop",
             "shipping": [27, 39, 49, 58, 67, 77, 86, 96, 105, 115, 125, 135, 144, 152, 160, 168, 176, 184, 192, 206, 216, 226, 236, 246, 261, 271, 281, 291, 301, 316, 326, 336, 346, 356, 371, 381, 391, 401, 441, 426, 436, 446, 456, 471, 481, 491, 501, 511, 526, 536, 546, 556, 566, 581, 591, 601, 661, 621, 636, 646, 656, 666, 676, 691, 701, 711, 721, 731, 746, 756, 766, 776, 786, 801, 811, 821, 831, 841, 856, 866, 876, 886, 896, 911, 921, 931, 841, 956, 966, 976],
@@ -790,7 +790,7 @@
     }, {
         "name": "Edfa3ly Fashionista",
         "desc": " اشتراك سنوي 225 جنية مضاف الي اجمالي السعر",
-        "img": "https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/1010190_626284674050725_1587039324_n.png?oh=75436ec24ac5e54c98a161e8139e5c22&oe=579DC01F",
+        "img": "https://www.edfa3ly.co/bundles/edfa3lylegacylayout/Frontend/Edfa3ly/images/landingpage001/001.png",
         "itemType": [{
             "type": "Computer / laptop",
             "shipping": 16,
@@ -1000,7 +1000,7 @@
         "name": "Hatolna",
         "name2": "هاتولنا",
         "desc": " اشتراك سنوي 225 جنية مضاف الي اجمالي السعر",
-        "img": "https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-0/s480x480/1376577_560038340779104_1253842516_n.jpg?oh=f64b2276d98e04537818cf34663ae6e7&oe=57D4589B",
+        "img": "https://files.startupranking.com/startup/thumb/11055_24a05ae46677ef3cb1514615249f46c0da6f57d0_hatolna-com_l.jpg",
         "itemType": [{
             "type": "Computer / laptop",
             "shipping": 14,
