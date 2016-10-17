@@ -4,7 +4,7 @@
 
 ## INSTRUCTIONS ##
 
-Use npm package "liver-server" or any equivalent server to run the application.
+Use npm package "live-server" or any equivalent server to run the application.
 
 
 ## TECHNOLOGIES ##
